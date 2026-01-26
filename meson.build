@@ -32,7 +32,7 @@
 project(
   'libXrandr',
   'c',
-  version: '1.5.4',
+  version: '1.5.5',
   license: 'HPND-sell-variant',
   license_files: 'COPYING',
   meson_version: '>= 1.1.0',
