@@ -85,6 +85,11 @@ lib = library(
   version: '2.2.0',
   install: true,
 )
+dep = declare_dependency(
+  include_directories: 'include',
+  link_with: lib,
+)
+meson.override_dependency('xrandr', dep)
 
 install_headers(
   'include/X11/extensions/Xrandr.h',
